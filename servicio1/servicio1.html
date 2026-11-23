@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Organizamos viajes turísticos a medida, con destinos inspiradores y experiencias auténticas.">
+  <title>Organización de viajes turísticos — TERRA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html" aria-label="TERRA, inicio">TERRA<span>JOURNEYS THAT STAY WITH YOU</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span></button>
+    <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="servicio1.html" aria-current="page">Organización de viajes</a>
+      <a href="../servicio2/servicio2.html">Guía y excursiones</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="s1-hero" aria-labelledby="s1-titulo">
+      <div class="s1-hero-content">
+        <p class="etiqueta">Tu viaje, a tu manera</p>
+        <h1 id="s1-titulo">Organización de viajes turísticos</h1>
+        <p>Itinerarios pensados para ti, con tiempo para descubrir y detalles que hacen especial cada momento.</p>
+        <a class="btn" href="#cotizacion">Cotizar mi viaje <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section s1-intro" aria-labelledby="s1-que-hacemos">
+      <p class="etiqueta">Viajar con intención</p>
+      <h2 class="section-title" id="s1-que-hacemos">¿Qué hacemos?</h2>
+      <p>Escuchamos lo que te inspira y lo convertimos en una ruta hecha a tu medida. Nos ocupamos de coordinar los detalles —desde el alojamiento hasta las experiencias locales— para que disfrutes cada paso con tranquilidad y libertad.</p>
+    </section>
+
+    <section class="section" aria-labelledby="s1-pasos-titulo">
+      <p class="etiqueta">Así de sencillo</p>
+      <h2 class="section-title" id="s1-pasos-titulo">Del sueño al viaje</h2>
+      <div class="s1-pasos">
+        <article class="s1-paso"><span class="s1-paso-numero">01</span><h3>Consulta</h3><p>Nos cuentas tus ideas, preferencias, fechas y presupuesto.</p></article>
+        <article class="s1-paso"><span class="s1-paso-numero">02</span><h3>Propuesta</h3><p>Preparamos una ruta personalizada y la ajustamos contigo.</p></article>
+        <article class="s1-paso"><span class="s1-paso-numero">03</span><h3>Reserva</h3><p>Coordinamos alojamientos, traslados y experiencias.</p></article>
+        <article class="s1-paso"><span class="s1-paso-numero">04</span><h3>Pago</h3><p>Confirmas tu viaje con un proceso claro y seguro.</p></article>
+        <article class="s1-paso"><span class="s1-paso-numero">05</span><h3>Viaje</h3><p>Te acompañamos con la información que necesitas para partir.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="s1-destinos-titulo">
+      <p class="etiqueta">Lugares que inspiran</p>
+      <h2 class="section-title" id="s1-destinos-titulo">Destinos para descubrir</h2>
+      <div class="s1-destinos-grid">
+        <article class="card s1-destino"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=85" alt="Santorini, casas encaladas y cúpulas azules sobre el mar"><h3>Santorini</h3><p>Luz de isla, calas y belleza mediterránea.</p></article>
+        <article class="card s1-destino"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=85" alt="Picos de montaña de las Dolomitas bajo un cielo estrellado"><h3>Dolomitas</h3><p>Montañas, naturaleza y libertad al aire libre.</p></article>
+        <article class="card s1-destino"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=85" alt="Templo tradicional y jardines en Kioto"><h3>Kioto</h3><p>Cultura, armonía y descubrimientos pausados.</p></article>
+        <article class="card s1-destino"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=85" alt="Pueblo de la Costa Amalfitana aferrado a un acantilado junto al mar"><h3>Costa Amalfitana</h3><p>Acantilados, historia y el encanto de la dolce vita.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="s1-itinerario-titulo">
+      <p class="etiqueta">Una idea de ruta</p>
+      <h2 class="section-title" id="s1-itinerario-titulo">Cinco días en Santorini</h2>
+      <div class="s1-tabla-wrap">
+        <table class="tabla s1-itinerario">
+          <thead><tr><th scope="col">Día</th><th scope="col">Actividad</th><th scope="col">Lugar</th><th scope="col">Alojamiento</th></tr></thead>
+          <tbody>
+            <tr><td>01</td><td>Llegada y paseo al atardecer</td><td>Fira</td><td>Hotel boutique en Fira</td></tr>
+            <tr><td>02</td><td>Calles blancas y visita cultural</td><td>Oia</td><td>Hotel boutique en Fira</td></tr>
+            <tr><td>03</td><td>Tiempo de playa y cocina local</td><td>Perissa</td><td>Hotel boutique en Fira</td></tr>
+            <tr><td>04</td><td>Excursión en barco por la caldera</td><td>Caldera de Santorini</td><td>Hotel boutique en Fira</td></tr>
+            <tr><td>05</td><td>Desayuno tranquilo y despedida</td><td>Fira</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="s1-tarifas-titulo">
+      <p class="etiqueta">Opciones para cada forma de viajar</p>
+      <h2 class="section-title" id="s1-tarifas-titulo">Tarifas por paquete</h2>
+      <div class="s1-tabla-wrap">
+        <table class="tabla s1-tarifas">
+          <thead><tr><th scope="col">Paquete</th><th scope="col">Qué incluye</th><th scope="col">Precio por persona</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Básico</strong></td><td>Planificación de ruta y guía digital del viaje.</td><td>Desde 490 €</td></tr>
+            <tr><td><strong>Confort</strong></td><td>Ruta personalizada, alojamiento seleccionado y asistencia durante el viaje.</td><td>Desde 890 €</td></tr>
+            <tr><td><strong>Premium</strong></td><td>Experiencia integral, alojamientos especiales, traslados y experiencias privadas.</td><td>Desde 1.490 €</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><small>Precios orientativos por persona; pueden variar según destino, temporada y disponibilidad.</small></p>
+    </section>
+
+    <section class="section" aria-labelledby="s1-galeria-titulo">
+      <p class="etiqueta">Un vistazo al camino</p>
+      <h2 class="section-title" id="s1-galeria-titulo">Paisajes que se quedan</h2>
+      <div class="s1-galeria" aria-label="Galería de destinos">
+        <img class="rasgado" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=700&q=85" alt="Vista costera de Santorini al atardecer">
+        <img class="rasgado" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=85" alt="Cumbres de montaña bajo un cielo estrellado">
+        <img class="rasgado" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=85" alt="Arquitectura tradicional de Kioto entre árboles">
+        <img class="rasgado" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=700&q=85" alt="Pueblo mediterráneo sobre la costa italiana">
+      </div>
+    </section>
+
+    <section class="section s1-cotizacion" id="cotizacion" aria-labelledby="s1-cotizacion-titulo">
+      <p class="etiqueta">Empecemos a imaginar</p>
+      <h2 class="section-title" id="s1-cotizacion-titulo">Cuéntanos tu próximo viaje</h2>
+      <p>Déjanos tus datos y nos pondremos en contacto para preparar una propuesta a tu medida.</p>
+      <form class="s1-form" novalidate>
+        <div class="s1-campo"><label for="s1-nombre">Nombre</label><input id="s1-nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div class="s1-campo"><label for="s1-correo">Correo electrónico</label><input id="s1-correo" name="correo" type="email" autocomplete="email" required></div>
+        <div class="s1-campo"><label for="s1-destino">Destino</label><select id="s1-destino" name="destino" required><option value="">Elige un destino</option><option>Santorini</option><option>Dolomitas</option><option>Kioto</option><option>Costa Amalfitana</option><option>Otro destino</option></select></div>
+        <div class="s1-campo"><label for="s1-fecha">Fecha de salida</label><input id="s1-fecha" name="fecha" type="date" required></div>
+        <div class="s1-campo"><label for="s1-personas">Número de personas</label><input id="s1-personas" name="personas" type="number" min="1" max="30" value="2" required></div>
+        <button class="btn" type="submit">Enviar solicitud <span aria-hidden="true">→</span></button>
+        <p class="s1-confirmacion" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="../index.html">TERRA<span>JOURNEYS THAT STAY WITH YOU</span></a><p>Viajes que se quedan contigo.</p><small>© TERRA</small></footer>
+</body>
+</html>
