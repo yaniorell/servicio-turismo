@@ -1,1 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Excursiones y guías locales certificadas con TERRA.">
+  <title>Guía turística y excursiones | TERRA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Ir al inicio">TERRA</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../servicio1/servicio1.html">Organización de viajes</a>
+        <a class="activo" href="servicio2.html" aria-current="page">Guía y excursiones</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="s2-hero section">
+      <div class="container s2-hero-grid">
+        <div class="s2-hero-copy">
+          <p class="etiqueta">Guía turística y excursiones</p>
+          <h1>Descubre cada lugar con quien lo conoce</h1>
+          <p>Recorridos auténticos, historias cercanas y paisajes inolvidables acompañados por expertos locales.</p>
+          <a class="btn" href="#excursiones">Reservar excursión</a>
+        </div>
+        <figure class="s2-hero-media rasgado">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85" alt="Senderista contemplando un valle montañoso">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="servicio">
+      <div class="container">
+        <p class="etiqueta">Conoce con confianza</p>
+        <h2 class="section-title">Una forma más cercana de viajar</h2>
+        <div class="s2-about">
+          <p>Diseñamos experiencias que conectan a cada viajero con la cultura, la naturaleza y las personas del destino.</p>
+          <ul>
+            <li><strong>Guías locales certificadas</strong><span>Conocimiento experto y auténtico de cada territorio.</span></li>
+            <li><strong>Grupos pequeños</strong><span>Atención personalizada y encuentros más humanos.</span></li>
+            <li><strong>Idiomas</strong><span>Recorridos en español, inglés y francés.</span></li>
+            <li><strong>Seguridad</strong><span>Protocolos, seguros y acompañamiento durante toda la actividad.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="excursiones">
+      <div class="container">
+        <p class="etiqueta">Elige tu próximo día</p>
+        <h2 class="section-title">Excursiones destacadas</h2>
+        <div class="s2-filtros" aria-label="Filtrar excursiones por dificultad">
+          <button class="btn activo" type="button" data-filtro="Todas">Todas</button>
+          <button class="btn" type="button" data-filtro="Fácil">Fácil</button>
+          <button class="btn" type="button" data-filtro="Moderada">Moderada</button>
+          <button class="btn" type="button" data-filtro="Difícil">Difícil</button>
+        </div>
+        <div class="s2-grid">
+          <article class="card s2-excursion" data-dificultad="Fácil">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Sendero soleado entre colinas verdes">
+            <div class="s2-card-content"><p class="etiqueta">Fácil</p><h3>Valle de los molinos</h3><p>Duración: 4 horas</p><p>Desde 48 €</p></div>
+          </article>
+          <article class="card s2-excursion" data-dificultad="Moderada">
+            <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=85" alt="Montaña rocosa junto a un lago azul">
+            <div class="s2-card-content"><p class="etiqueta">Moderada</p><h3>Lagunas de montaña</h3><p>Duración: 7 horas</p><p>Desde 82 €</p></div>
+          </article>
+          <article class="card s2-excursion" data-dificultad="Difícil">
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=85" alt="Cumbre de montaña cubierta de nieve">
+            <div class="s2-card-content"><p class="etiqueta">Difícil</p><h3>Cumbre del amanecer</h3><p>Duración: 10 horas</p><p>Desde 115 €</p></div>
+          </article>
+          <article class="card s2-excursion" data-dificultad="Fácil">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Paisaje de pueblo junto a un lago y montañas">
+            <div class="s2-card-content"><p class="etiqueta">Fácil</p><h3>Pueblos junto al agua</h3><p>Duración: 5 horas</p><p>Desde 55 €</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container s2-tables">
+        <div>
+          <p class="etiqueta">Ejemplo de jornada</p>
+          <h2 class="section-title">Itinerario de día completo</h2>
+          <div class="tabla s2-tabla"><table>
+            <thead><tr><th>Hora</th><th>Actividad</th><th>Lugar</th><th>Duración</th></tr></thead>
+            <tbody>
+              <tr><td>08:00</td><td>Encuentro y traslado</td><td>Centro histórico</td><td>45 min</td></tr>
+              <tr><td>09:00</td><td>Sendero panorámico</td><td>Valle Norte</td><td>2 h</td></tr>
+              <tr><td>11:30</td><td>Degustación local</td><td>Granja sostenible</td><td>1 h</td></tr>
+              <tr><td>13:00</td><td>Pausa y almuerzo</td><td>Mirador del lago</td><td>1 h 30 min</td></tr>
+              <tr><td>15:00</td><td>Exploración cultural</td><td>Pueblo tradicional</td><td>2 h</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div>
+          <p class="etiqueta">Opciones disponibles</p>
+          <h2 class="section-title">Tarifas</h2>
+          <div class="tabla s2-tabla"><table>
+            <thead><tr><th>Excursión</th><th>Duración</th><th>Grupo pequeño</th><th>Grupo grande</th><th>Incluye</th></tr></thead>
+            <tbody>
+              <tr><td>Valle de los molinos</td><td>4 h</td><td>48 €</td><td>38 €</td><td>Guía y seguro</td></tr>
+              <tr><td>Lagunas de montaña</td><td>7 h</td><td>82 €</td><td>65 €</td><td>Guía, comida y seguro</td></tr>
+              <tr><td>Cumbre del amanecer</td><td>10 h</td><td>115 €</td><td>92 €</td><td>Guía, equipo y seguro</td></tr>
+              <tr><td>Pueblos junto al agua</td><td>5 h</td><td>55 €</td><td>44 €</td><td>Guía, traslado y seguro</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guias">
+      <div class="container">
+        <p class="etiqueta">Nuestros expertos</p>
+        <h2 class="section-title">Guías locales</h2>
+        <div class="s2-grid s2-guias">
+          <article class="card s2-guia"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=85" alt="Retrato de Lucía Moreno, guía cultural"><div class="s2-card-content"><h3>Lucía Moreno</h3><p>Especialidad: Patrimonio y cultura</p><p>Idiomas: Español, inglés</p></div></article>
+          <article class="card s2-guia"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85" alt="Retrato de Marco Vidal, guía de montaña"><div class="s2-card-content"><h3>Marco Vidal</h3><p>Especialidad: Montaña y senderismo</p><p>Idiomas: Español, francés</p></div></article>
+          <article class="card s2-guia"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Retrato de Amina El Mansouri, guía naturalista"><div class="s2-card-content"><h3>Amina El Mansouri</h3><p>Especialidad: Naturaleza y fauna</p><p>Idiomas: Español, árabe, inglés</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <p class="etiqueta">Momentos TERRA</p>
+        <h2 class="section-title">La aventura, desde cerca</h2>
+        <div class="s2-galeria">
+          <figure class="rasgado"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85" alt="Desierto dorado al atardecer"></figure>
+          <figure class="rasgado"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=85" alt="Bosque verde atravesado por un sendero"></figure>
+          <figure class="rasgado"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=85" alt="Viajeros caminando ante un paisaje de montañas"></figure>
+          <figure class="rasgado"><img src="https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=900&q=85" alt="Vista panorámica de un pueblo entre montañas"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>Sustainable travel</p><p>Small groups</p><p>Real experiences</p><p>© TERRA</p></div>
+  </footer>
+</body>
+</html>

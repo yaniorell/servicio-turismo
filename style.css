@@ -1,1 +1,44 @@
-
+/* ===== SERVICIO 2 ===== */
+.s2-hero { background: linear-gradient(135deg, var(--crema), #fffaf0); padding: 3.5rem 0 4.5rem; }
+.s2-hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; }
+.s2-hero-copy h1 { max-width: 11ch; font-family: var(--fuente-titulo); color: var(--texto); font-size: clamp(3rem, 6vw, 5.8rem); line-height: .88; margin: .5rem 0 1.25rem; }
+.s2-hero-copy > p:not(.etiqueta) { max-width: 32rem; margin-bottom: 1.5rem; }
+.s2-hero-media { height: 520px; margin: 0; overflow: hidden; }
+.s2-hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.s2-about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; align-items: start; }
+.s2-about > p { font-family: var(--fuente-titulo); font-size: 2rem; color: var(--texto); }
+.s2-about ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.s2-about li { border-top: 1px solid var(--oliva); padding: 1rem .5rem; }
+.s2-about li strong, .s2-about li span { display: block; }
+.s2-about li span { margin-top: .35rem; }
+.s2-filtros { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 2rem; }
+.s2-filtros .btn { background: transparent; color: var(--texto); border: 1px solid var(--verde); }
+.s2-filtros .activo { background: var(--terracota); color: #fff; border-color: var(--terracota); }
+.s2-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.s2-excursion, .s2-guia { overflow: hidden; }
+.s2-excursion img, .s2-guia img { width: 100%; height: 230px; object-fit: cover; }
+.s2-card-content { padding: 1.1rem; }
+.s2-card-content h3 { margin: .25rem 0 .7rem; }
+.s2-card-content p { margin: .35rem 0; }
+.s2-excursion[hidden] { display: none; }
+.s2-tables { display: grid; gap: 3.5rem; }
+.s2-tabla { overflow-x: auto; }
+.s2-tabla table { min-width: 650px; }
+.s2-guias { grid-template-columns: repeat(3, 1fr); }
+.s2-guia img { height: 320px; }
+.s2-galeria { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.s2-galeria figure { height: 280px; margin: 0; overflow: hidden; }
+.s2-galeria img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  .s2-hero-grid, .s2-about { grid-template-columns: 1fr; }
+  .s2-hero-media { height: 390px; }
+  .s2-grid { grid-template-columns: repeat(2, 1fr); }
+  .s2-galeria { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .s2-hero { padding-top: 2rem; }
+  .s2-hero-media { height: 300px; }
+  .s2-about ul, .s2-grid, .s2-guias, .s2-galeria { grid-template-columns: 1fr; }
+  .s2-filtros .btn { flex: 1 1 40%; }
+  .s2-galeria figure { height: 240px; }
+}
